@@ -4,9 +4,9 @@
 
 The third project in the General Assembly Software Engineering Immersive was our first full-stack group project. The project involved collaboration within a team of three—myself and two other students—and required the development of a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application. This project served as a culmination of the technologies we had extensively learned over the preceding month. 
  
-**Deployment link **
+**Deployment link**
 
-Deployment link:** **[https://gameofthronesfullstack-b965d7354f59.herokuapp.com/](https://gameofthronesfullstack-b965d7354f59.herokuapp.com/)
+Deployment link:[https://gameofthronesfullstack-b965d7354f59.herokuapp.com/](https://gameofthronesfullstack-b965d7354f59.herokuapp.com/)
 
 **Brief**
 
@@ -117,6 +117,11 @@ Implementing this secure route middleware significantly fortifies the site's sec
 **FRONT END**
 
 The first job I took part in was creating the NavBar of the site, the component for the search bar itself can be found on **NavBarSearch.jsx.**, In building the **NavBarSearch** component, I focused on creating a user-friendly navigation feature that seamlessly integrates a search bar into the site's navigation. This component serves as an essential tool, allowing users to explore and discover diverse content across different sections of the site right from the navigation bar. A standout benefit of this component is its ability to enable early and effortless navigation within the site. The inclusion of the search bar at this stage provided us with immediate access to search functionality, allowing us to quickly find relevant content without the need to navigate extensively through the site's structure in the development process.
+
+
+<img width="597" alt="Screenshot 2024-02-13 at 14 16 21" src="https://github.com/NyashaDZT/GameOfThrones_fullstack/assets/124045473/87262c37-7068-4794-89bc-59bb2c9fe780">
+
+
 
  The search bar with the User logged out and logged in.
 
