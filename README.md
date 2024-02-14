@@ -4,11 +4,11 @@
 
 The third project in the General Assembly Software Engineering Immersive was our first full-stack group project. The project involved collaboration within a team of three—myself and two other students—and required the development of a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application. This project served as a culmination of the technologies we had extensively learned over the preceding month. 
  
-**Deployment link**
+### Deployment link
 
 Deployment link:[https://gameofthronesfullstack-b965d7354f59.herokuapp.com/](https://gameofthronesfullstack-b965d7354f59.herokuapp.com/)
 
-**Brief**
+### Brief
 
  We received a set of project requirements that can be succinctly summarised as follows:
 
@@ -19,7 +19,7 @@ Deployment link:[https://gameofthronesfullstack-b965d7354f59.herokuapp.com/](htt
 * A full product with CRUD functionality on at least one model.
 * And to be deployed online where it is accessible to everyone.
 
-**Planning**
+## Planning
 
 Amongst those technical requirements, there were also some other requirements which had to be fulfilled prior to starting the project, these included a wireframe and a written project plan which were looked over by the tutor where we were expected to explain in detail the features of the app, how we planned on implementing them and how they were going to work, the main bases of this signing off process to make sure we had a good understanding of what our Minimum Viable Product was going to be. Stretch goals were also discussed during these signing off presentation. 
 
@@ -36,7 +36,7 @@ A part of the plan was also the division of labour, as this would have been our 
 
 
 
-**Technology**
+### Technology
 
 **Back End:**
 
@@ -63,9 +63,9 @@ A part of the plan was also the division of labour, as this would have been our 
 * VSCode (Integrated Development Environment)
 * ESLint (Code linter for identifying and fixing problems in the JavaScript code)
 
-**Build**
+## Build/Code
 
-**BACK-END** 
+### BACK-END
  
 At the outset of this project, I prioritised meticulous planning to ensure a structured approach and comprehensive understanding before deep diving into coding. One of the primary steps was crafting a user model using the Mongoose library within Node.js. This model served as the foundational structure for the users' data. Below is the code snippet representing the user schema: 
  
@@ -86,7 +86,7 @@ The **.set()** function attached to this virtual field assigns the provided valu
 
 On the other hand, the pre-save middleware is instrumental in enhancing the security of user passwords. When a modification occurs in the password field, I've incorporated a mechanism that securely hashes the password. Utilising the bcrypt library, I've hashed the password with a salt generated through **bcrypt.genSaltSync(12)**. This hashing procedure significantly fortifies security by storing only the hashed password in the database, thus preventing sensitive information exposure. These middleware functions are integral components of the user schema, serving to validate password consistency and bolster overall security measures within the application. 
  
-**User Controller Overview 
+**User Controller Overview** 
  
 **Within my user controllers, I've encapsulated essential functionalities for user registration, login, profile retrieval, and profile image updates. These controllers handle interactions between the server and the user model, implementing necessary logic to ensure secure and efficient user operations. 
  
@@ -114,7 +114,7 @@ Within the Back-end we also added a Secure Route function which would be used on
 
 Implementing this secure route middleware significantly fortifies the site's security posture. By validating JWT tokens, verifying user existence, and controlling access to protected routes, I've bolstered the site's defences against unauthorised access attempts. This comprehensive authentication mechanism safeguards sensitive functionalities, ensuring that only authenticated users can access and interact with the protected endpoints, mitigating potential security vulnerabilities and reinforcing the overall integrity of the site.
 
-**FRONT END**
+### FRONT END
 
 The first job I took part in was creating the NavBar of the site, the component for the search bar itself can be found on **NavBarSearch.jsx.**, In building the **NavBarSearch** component, I focused on creating a user-friendly navigation feature that seamlessly integrates a search bar into the site's navigation. This component serves as an essential tool, allowing users to explore and discover diverse content across different sections of the site right from the navigation bar. A standout benefit of this component is its ability to enable early and effortless navigation within the site. The inclusion of the search bar at this stage provided us with immediate access to search functionality, allowing us to quickly find relevant content without the need to navigate extensively through the site's structure in the development process.
 
@@ -129,7 +129,7 @@ One of the key highlights of this component lies in its utilization of asynchron
 
 
  
-**Authentication**
+### Authentication
 
  
 The **activeUser** function operates as a vital piece of the site's user authentication system. It functions by retrieving and assessing the authenticity of a stored token in the local storage. Upon invocation, it validates the token's existence and checks its expiry against the current time, ensuring its validity. This dynamic functionality plays a pivotal role in rendering different navigation elements based on the user's authentication status. When a user is authenticated, it triggers the display of specific navigation links, such as accessing the user's profile page, creating a character, and facilitating a smooth logout process. Conversely, for unauthenticated users, it renders links prompting them to register or login as shown in the most recent picture above. This conditional rendering of navigation elements within the JSX of the **Nav** component ensures a tailored and secure user experience, allowing users to seamlessly access functionalities based on their authentication status. 
@@ -152,22 +152,22 @@ Upon submission of the login form, the **loginUser** function in the front-end i
  
 Back on the front-end, the **Login** component utilises **useEffect** to monitor changes in the response received from the login request. If the response status is 202 (indicating a successful login), it saves the token using the **setToken** function, navigates the user to the homepage ('/') using **navigate** from **react-router-dom**, effectively redirecting the user after successful authentication. The styling for the **Login** component maintains simplicity, using basic HTML inputs and minimal CSS classes to ensure a clean and user-friendly interface.
 
-**Challenges**
+### Challenges
 
 Throughout the project, I encountered common challenges in software development. One such hurdle was spending an extensive amount of time stuck on a particular issue, leading to time wastage and subsequent catch-up work. In hindsight, I realise that switching to a different task temporarily might have been a beneficial approach. This strategy could have prevented getting stuck for an extended period and potentially allowed for fresh insights when revisiting the problem later. Additionally, compiling and integrating extensive code segments, despite the project's relative ease (in the context of how difficult project one felt), proved challenging. Organising and aligning numerous code components demanded meticulous attention to detail to ensure seamless integration.
 
 My reliance on documentation, particularly the React Bootstrap, Mongoose, and Express documentation, was pivotal. I invested significant time exploring these resources, highlighting their complexity and the need for a comprehensive understanding to effectively utilise their functionalities. Despite facing challenges in code integration and problem-solving, my dedication to navigating and leveraging documentation demonstrates resilience and a commitment to overcoming hurdles encountered throughout the project journey.
 
-**Wins & Key Learnings**
+### Wins & Key Learnings
 
 Throughout our project journey, effective communication was the cornerstone of our success right from the project's inception. As a team, we prioritised communication, dedicating an initial three-hour Zoom session to meticulously plan our approach before seeking project approval. Leveraging tools like Trello for task management and zoom for regular meetings, including daily morning briefs and stand-ups, ensured our lines of communication remained crystal clear. Collaborating on Zoom provided us with a collaborative platform where ideas flowed freely, fostering a cohesive team environment despite remote working arrangements. Our strategic planning involved coordinating submission schedules into our development folder, aligning tasks around each other's progress. This approach enabled us to optimise our workflow, capitalise on collective insights, and ensure seamless integration of contributions, allowing us to harness the full potential of our diverse skill sets towards the project's success.
 
 Our collaboration extended seamlessly onto GitHub, where I actively engaged in utilising version control practices such as cloning and fetching to ensure synchronisation within our team. We established a systematic approach to update each other upon pushing changes to our shared development folder, maintaining transparency, and facilitating a coherent workflow. Troubleshooting GitHub-related issues collectively became a norm, fostering a supportive environment where we efficiently addressed challenges as a team. Additionally, our commitment to open communication channels was instrumental, enabling continuous support even during non-synchronous work hours. This approach allowed for smooth knowledge sharing and facilitated mutual understanding, ensuring that all team members remained aligned and well-versed in the project's codebase
 
-**Bugs **
+### Bugs
 
 There are no bugs to report from the project.
 
-**Future Improvements**
+### Future Improvements
 
 The biggest future improvements I can see for the project would be to improve the overall styling of the profile project, this part of the project was done very quickly and this can be noted in its rather rough state that it was left in. Although it does display the necessary information, it does not display it in the most visually pleasing way. Another future improvement would be to allow users to upload their profile pictures directly on the register form. To begin with we did not feel as though we were going to have a profile picture and by the time it was added in as a feature we could only put the option of uploading it, directly on the profile page itself.
